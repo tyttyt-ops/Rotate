@@ -95,7 +95,7 @@ python rotate3D.py
 ## 示例效果
 
 ### 2D 示例
-1.**A 键**：顺时针旋转&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.**D 键**：逆时针旋转
+1.**A 键**：顺时针旋转&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.**D 键**：逆时针旋转
 
 ![3D Transformation (Taichi) (18 13 FPS) 2026-03-23 23-01-25](https://github.com/user-attachments/assets/2286704f-5c71-4384-8915-24909c8d3b1f) ![3D Transformation (Taichi) (18 92 FPS) 2026-03-23 23-00-48](https://github.com/user-attachments/assets/446cfb30-ec8a-4ea0-87ad-d4c7feffdb54)
 
