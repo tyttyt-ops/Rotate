@@ -15,6 +15,7 @@ Rotate 是一个使用 Taichi 库实现的 2D 和 3D 旋转示例项目，展示
 
 - **2D 旋转示例**：实现了一个三角形的旋转和透视投影
 - **3D 旋转示例**：实现了一个彩色立方体的三维旋转和透视投影
+- **双立方体插值**：在两个不同姿态的立方体间实现平滑的旋转插值过渡
 - **交互式控制**：支持通过键盘控制几何体的旋转方向和角度
 - **自动旋转**：3D 示例中添加了自动旋转功能，增强视觉效果
 - **彩色渲染**：3D 立方体的不同面使用不同颜色渲染，增强立体感
@@ -46,6 +47,12 @@ python rotate2D.py
 python rotate3D.py
 ```
 
+### 运行双立方体旋转插值
+
+```bash
+python rotate3D_inter.py
+```
+
 ## 交互控制
 
 ### 2D 示例控制
@@ -64,13 +71,19 @@ python rotate3D.py
 - **E 键**：绕 Z 轴逆时针旋转
 - **ESC 键**：退出程序
 
+### 双立方体旋转插值
+- **空格键**：切换插值方向
+- **R 键**：重置插值
+- **ESC 键**：退出程序
+
 ## 文件结构
 
 ```
 .
-├── README.md          # 项目说明文档
-├── rotate2D.py        # 2D 旋转示例
-└── rotate3D.py        # 3D 旋转示例
+├── rotate2D.py          # 2D 三角形旋转动画
+├── rotate3D.py          # 3D 立方体旋转动画
+├── rotate3D_inter.py    # 双立方体旋转插值动画
+└── README.md            # 项目说明文档
 ```
 
 ## 技术实现
@@ -95,12 +108,12 @@ python rotate3D.py
 ## 示例效果
 
 ### 2D 示例
-1.**A 键**：顺时针旋转&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.**D 键**：逆时针旋转
+1.**A 键**：顺时针旋转&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2.**D 键**：逆时针旋转
 
 ![3D Transformation (Taichi) (18 13 FPS) 2026-03-23 23-01-25](https://github.com/user-attachments/assets/2286704f-5c71-4384-8915-24909c8d3b1f) ![3D Transformation (Taichi) (18 92 FPS) 2026-03-23 23-00-48](https://github.com/user-attachments/assets/446cfb30-ec8a-4ea0-87ad-d4c7feffdb54)
 
 ### 3D 示例
-1.**A 键**：绕 Y 轴顺时针旋转&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;      2.**D 键**：绕 Y 轴逆时针旋转
+1.**A 键**：绕 Y 轴顺时针旋转&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2.**D 键**：绕 Y 轴逆时针旋转
 
 ![3D Cube Transformation (Taichi) (59 95 FPS) 2026-03-25 18-07-17](https://github.com/user-attachments/assets/dfb91057-8107-4699-a7e1-5efd702d3114) ![3D Cube Transformation (Taichi) (59 95 FPS) 2026-03-25 18-07-17 (1)](https://github.com/user-attachments/assets/59af6213-76be-4a47-a219-44ab5a09679c)
 
@@ -112,6 +125,9 @@ python rotate3D.py
 
 ![3D Cube Transformation (Taichi) (59 95 FPS) 2026-03-25 18-07-17 (4)](https://github.com/user-attachments/assets/7d732c3d-687c-4bca-a0da-5036ab08d43b) ![3D Cube Transformation (Taichi) (59 95 FPS) 2026-03-25 18-07-17 (6)](https://github.com/user-attachments/assets/d9e6127e-72d5-4f82-83e9-6cc66e374a67)
 
+### 双立方体插值示例
+
+![Two Cubes Rotation Interpolation (12 74 FPS) 2026-04-13 00-24-11](https://github.com/user-attachments/assets/6cd00910-a10d-470b-91a9-de1c7ce02a42)
 
 ## 许可证
 
